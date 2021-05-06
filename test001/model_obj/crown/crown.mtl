@@ -1,0 +1,16 @@
+# Made in Blockbench 3.8.3
+newmtl m_0
+map_Kd gold_block.png 
+newmtl m_1
+map_Kd red_wool.png 
+newmtl m_2
+map_Kd emerald_block.png 
+newmtl m_3
+map_Kd diamond_block.png 
+newmtl m_4
+map_Kd red_shulker_box.png 
+newmtl m_6
+map_Kd redstone_lamp_on.png 
+newmtl m_7
+map_Kd brown_concrete.png 
+newmtl none
