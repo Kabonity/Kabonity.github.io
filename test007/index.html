@@ -6,9 +6,18 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
+        <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?kIEqzYUi7mY%3D&box=N0rkTdiiUsE%3D&timeout=3&aa=1&ab=2" charset="utf-8"></script>
+        <style>
+        	body{font-family: "FOT-スキップ Std L";}
+        </style>
     </head>
 
     <body style="margin: 0; overflow: hidden;">
+    	    <div class="info">
+<h2>Karbon AR GO</h2>
+<hr>
+<p>縦画面でご利用ください。 利用にはカメラの使用を許可する必要があります。<br><br>iPhoneをご利用の方はSafariからアクセスしてください。<br><br><small>Karbon AR GO Version 0.1a</small></p>
+    </div>
         <a-scene
             vr-mode-ui="enabled: false;"
             loading-screen="enabled: false;"
@@ -44,5 +53,27 @@
 
             <a-entity camera></a-entity>
         </a-scene>
+               <div style="color:#fff; position:fixed; text-align:center; bottom:20px; width:100%;">
+<hr>
+<small>Karbon AR GO Version 0.1a</small></p>
+    </div>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        //情報削除
+        setTimeout(function(){
+            $(".info").html("");
+        },2000);
+        
+        var url = location.href
+
+        //https強制
+        if(url.indexOf('http:') >= 0) { 
+
+            var newUrl = url.replace('http:', 'https:'); 
+
+
+            location.replace(newUrl);
+        }
+    </script>
     </body>
 </html>
