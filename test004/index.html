@@ -2,7 +2,8 @@
 <html>
 <script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
 <script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.5.0/aframe/build/aframe-ar.js"></script>
-<body style='margin : 0px; overflow: hidden; text-align:center;'>
+    <script type="text/javascript" src="//webfont.fontplus.jp/accessor/script/fontplus.js?kIEqzYUi7mY%3D&box=N0rkTdiiUsE%3D&timeout=3&aa=1&ab=2" charset="utf-8"></script>
+<body style='margin : 0px; overflow: hidden; text-align:center;font-family: "FOT-スキップ Std L";'>
     <div class="info">
 <h2>Karbon AR GO</h2>
 <hr>
@@ -24,9 +25,21 @@
     </div>
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <script>
+        //情報削除
         setTimeout(function(){
             $(".info").html("");
         },2000);
+        
+        var url = location.href
+
+        //https強制
+        if(url.indexOf('http:') >= 0) { 
+
+            var newUrl = url.replace('http:', 'https:'); 
+
+
+            location.replace(newUrl);
+        }
     </script>
 </body>
 </html>
